@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculateur de prêt hypothécaire</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylecalculateur.css">
+  <script src="appcalculateur.js" defer></script>
+</head>
+<body>
+  <section>
+  <h2>Le Calculateur de prêt hypothécaire</h2>
+  <form id="loanForm">
+        <label for="loanAmount">Montant du prêt (P) :</label>
+        <input type="number" id="loanAmount" step="any" required><br><br>
+
+        <label for="annualRate">Taux d'intérêt annuel (en %) :</label>
+        <input type="number" id="annualRate" step="any" required><br><br>
+    
+        <label for="loanDuration">Durée du prêt (en années) :</label>
+        <input type="number" id="loanDuration" required><br><br>
+      <p id="result"></p>
+    <button type="button" onclick="calculateMortgage()">Calculer</button>
+  </form>
+</section>
+</body>
+</html>

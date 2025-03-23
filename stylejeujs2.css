@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 150px;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  #gameArea {
+    position: relative;
+    margin: 20px auto;
+    width: 500px;
+    height: 400px;
+    background-color: #86b384;
+    overflow: hidden;
+    border: 2px solid #1e774b;
+    border-radius: 10px;
+  }
+  #fruit {
+    position: absolute;
+    width: 70px; 
+    height: 70px; 
+    background-image: url('fruit.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  
+  #scoreBoard {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 20px auto;
+    width: 200px;
+    height: 20px;
+    background-color: #d3d3d3;
+    border:   1px solid #7c7b7b;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  #levelSelector {
+    margin-top: 20px;
+  }
+  #levelSelector button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #86b384;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  #easyButton , #hardButton , #pauseButton {
+    font-size: 150%;
+  }
+  #btn {
+    display: flex;
+    justify-content: center;
+  }
+  #levelSelector button:hover {
+    background-color: #018333;
+  }
+  #pauseButton {
+    margin-top: 20px;
+    margin-left: 40px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #c73743;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  #pauseButton:hover {
+    background-color: #a01924;
+  }
+  h1 {
+    color: #0e703f;
+    font-weight: bold;
+  }

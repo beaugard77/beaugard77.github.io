@@ -1,0 +1,287 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: rgb(5, 33, 46);
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+main {
+    margin: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    padding-left: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    transition: transform 0.2s;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: #00d4ff;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.éléments-de-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.profile {
+    text-align: center;
+    padding-bottom: 70px;
+
+}
+#profile {
+    font-size: 40px; 
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    padding-top: 20px;
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+
+#photo-de-profile {
+    width: 250px; 
+    height: 250px;
+    border-radius: 50%; 
+}
+
+.highlight {
+    color: #00d4ff;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00d4ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #0193d6;
+    transform: scale(1.05);
+}
+
+.A-propos, .skills {
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(230, 230, 230);
+}
+
+.A-propos-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+#A-propos {
+    font-size: 24px;
+}
+
+.projects {
+    text-align: left;
+    background-color: white;
+    padding: 70px;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+.project-card {
+    background-color: #e4f6fa;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    border: solid 2px #00d4ff;
+    border-radius: 10px;
+}
+
+.project-card:hover {
+    background-color: white;
+    transform: scale(105%);
+    transition: 0.5s ease-in-out;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px; 
+    flex-wrap: wrap; 
+}
+
+.soft-skills,
+.hard-skills {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 650px; 
+}
+
+.skill {
+    margin: 0 0;
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #00d4ff;
+    transition: width 0.5s ease-in-out;
+}
+
+#soft-skills, #hard-skills {
+    color: #00d4ff;
+    font-size: 150%;
+}
+
+.contact {
+    text-align: center;
+    background-color: rgb(5, 33, 46);
+    color: white;
+    padding: 50px;
+}
+
+form input {
+    width: 100%; 
+    max-width: 280px;
+    padding: 10px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#sujet {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+form textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 150px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background-color: #00d4ff;
+    width: 200px;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #e7e7e7;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .profile, .A-propos, .skills, .Projects, .contact {
+        padding: 20px;
+    }
+
+    .project-list, .skills-container {
+        flex-direction: column;
+        width: 100%; 
+        max-width: 100%px;
+        
+    }
+
+    .soft-skills, .hard-skills {
+        width: 100%; 
+        max-width: 100%px;
+    }
+
+    form input, form textarea, #sujet {
+        width: 100%;
+        max-width: 100%;
+    }
+}
